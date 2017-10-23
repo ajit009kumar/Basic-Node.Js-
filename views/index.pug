@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  include templates/header.pug
+  h1 #{videodata.categoryName}
+  <ul>
+      each entry in videodata.categories
+       <li> <a href = https://thenewboston.com/videos_food.php?cat=#{entry.categoryID}>  #{entry.categoryName}  </a> </li>
+  </ul>
+
+ 
+
+ 
